@@ -8,7 +8,7 @@ http://localhost:3000/api/v1/... */
 function routerApi(app) {
   const router = express.Router();
   /* Ruta estática por la cual iniciaran todos los end points */
-  app.use('/api/v1', router);
+  app.use('/api/v2', router);
   /* Rutas dinámicas dependiendo del recuerso o request */
   router.use('/products', productRouter);
   router.use('/users', userRouter);
